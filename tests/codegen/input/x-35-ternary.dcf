@@ -1,0 +1,14 @@
+import printf;
+
+void main() {
+  int x;
+
+  // a b d e f
+  x = printf("a\n") != printf("b\n") ? printf("c\n") : printf("d\n") == printf("e\n") ? printf("f\n") : printf("g\n");
+
+  // a b c
+  x = printf("a\n") == printf("b\n") ? printf("c\n") : printf("d\n") == printf("e\n") ? printf("f\n") : printf("g\n");
+
+  // a b c g
+  x = (printf("a\n") == printf("b\n") ? printf("c\n") == 0 : printf("d\n") == printf("e\n")) ? printf("f\n") : printf("g\n");
+}

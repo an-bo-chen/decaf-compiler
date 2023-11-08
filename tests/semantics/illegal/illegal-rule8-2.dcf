@@ -1,0 +1,9 @@
+void main() {
+    int b;
+    b = a(1, true);
+    // Method returns wrong type
+}
+
+bool a(int a, bool b){
+    return true;
+}

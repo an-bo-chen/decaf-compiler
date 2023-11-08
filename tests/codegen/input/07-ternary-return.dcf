@@ -1,0 +1,10 @@
+import printf;
+
+bool isEven(int input){
+    return input % 2 == 0 ? true : false;
+}
+
+void main(){
+    printf("%d\n", isEven(15));
+    printf("%d\n", isEven(100));
+}

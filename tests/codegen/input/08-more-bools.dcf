@@ -1,0 +1,19 @@
+import printf;
+
+void main(){
+    bool t = true;
+    bool f = false;
+
+    // Truth table for &&
+    printf("%d\n", t && t);
+    printf("%d\n", t && f);
+    printf("%d\n", f && t);
+    printf("%d\n", f && f);
+
+    // Truth table for ||
+    printf("%d\n", t || t);
+    printf("%d\n", t || f);
+    printf("%d\n", f || t);
+    printf("%d\n", f || f);
+
+}

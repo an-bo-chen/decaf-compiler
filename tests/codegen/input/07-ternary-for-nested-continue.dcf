@@ -1,0 +1,16 @@
+import printf;
+
+void main(){
+    int x;
+    int y;
+
+    for (x = 0; x < 3 ? true : false; x++){
+        for (y = 0; y < 5 ? true : false; y += (x == 0) ? 2 : 1) {
+            if (y == 2){
+                continue;
+            }
+
+            printf("%d, %d\n", x, y);
+        }
+    }
+}

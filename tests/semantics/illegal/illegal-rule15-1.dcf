@@ -1,0 +1,7 @@
+int a = 5;
+
+void main(){
+    int b;
+
+    b = len(a);
+}

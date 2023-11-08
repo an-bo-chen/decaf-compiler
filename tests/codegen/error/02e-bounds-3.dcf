@@ -1,0 +1,8 @@
+import printf;
+
+int arr[] = {1, 2, 3};
+
+void main(){
+    printf("%d\n", len(arr));
+    printf("%d\n", arr[3]);
+}

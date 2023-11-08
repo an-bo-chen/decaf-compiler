@@ -1,0 +1,2 @@
+char-invalid-2 line 1:2: unexpected char: 0xA
+char-invalid-2 line 2:2: unexpected char: 0xA

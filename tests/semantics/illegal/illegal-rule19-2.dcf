@@ -1,0 +1,8 @@
+int blab[3];
+void main(){
+    bar(blab[2] || false)
+}
+
+bool bar(bool foo) {
+    return !foo;
+}

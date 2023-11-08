@@ -1,0 +1,5 @@
+import abc;
+
+void main(){
+    main();
+}

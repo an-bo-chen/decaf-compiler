@@ -1,0 +1,6 @@
+void main(){
+    bool a = false;
+    int b;
+    a = (a) ? a : !a;
+    b = (a) ? 3 : 4 + 2;
+}

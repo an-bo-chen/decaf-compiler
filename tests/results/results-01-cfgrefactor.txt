@@ -1,0 +1,501 @@
+Test Result for 00-empty.dcf
+Time: 92 ms
+Lines of Assembly: 33
+
+
+
+Test Result for 01-import.dcf
+Time: 94 ms
+Lines of Assembly: 43
+
+
+
+Test Result for 02-expr.dcf
+Time: 145 ms
+Lines of Assembly: 145
+
+
+
+Test Result for 03-math-precedence.dcf
+Time: 94 ms
+Lines of Assembly: 62
+
+
+
+Test Result for 03-math.dcf
+Time: 110 ms
+Lines of Assembly: 237
+
+
+
+Test Result for 04-function-calls-6args.dcf
+Time: 94 ms
+Lines of Assembly: 92
+
+
+
+Test Result for 04-function-calls-7args.dcf
+Time: 224 ms
+Lines of Assembly: 107
+
+
+
+Test Result for 04-function-calls-8args-str.dcf
+Time: 112 ms
+Lines of Assembly: 89
+
+
+
+Test Result for 04-function-calls-8args.dcf
+Time: 95 ms
+Lines of Assembly: 117
+
+
+
+Test Result for 04-function-calls-return-bool.dcf
+Time: 92 ms
+Lines of Assembly: 57
+
+
+
+Test Result for 04-function-calls-return-int.dcf
+Time: 239 ms
+Lines of Assembly: 57
+
+
+
+Test Result for 04-function-calls.dcf
+Time: 92 ms
+Lines of Assembly: 56
+
+
+
+Test Result for 05-scopes.dcf
+Time: 105 ms
+Lines of Assembly: 107
+
+
+
+Test Result for 06-cf-if-else.dcf
+Time: 102 ms
+Lines of Assembly: 67
+
+
+
+Test Result for 06-cf-if-neq.dcf
+Time: 228 ms
+Lines of Assembly: 86
+
+
+
+Test Result for 06-cf-if-nested.dcf
+Time: 106 ms
+Lines of Assembly: 91
+
+
+
+Test Result for 06-cf-if-ternary.dcf
+Time: 105 ms
+Lines of Assembly: 139
+
+
+
+Test Result for 06-cf-if.dcf
+Time: 101 ms
+Lines of Assembly: 67
+
+
+
+Test Result for 07-ternary-for-nested-break.dcf
+Time: 91 ms
+Lines of Assembly: 272
+
+
+
+Test Result for 07-ternary-for-nested-continue.dcf
+Time: 95 ms
+Lines of Assembly: 331
+
+
+
+Test Result for 07-ternary-for-nested-return.dcf
+Time: 97 ms
+Lines of Assembly: 274
+
+
+
+Test Result for 07-ternary-for-nested.dcf
+Time: 91 ms
+Lines of Assembly: 255
+
+
+
+Test Result for 07-ternary-for.dcf
+Time: 93 ms
+Lines of Assembly: 171
+
+
+
+Test Result for 07-ternary-return.dcf
+Time: 100 ms
+Lines of Assembly: 116
+
+
+
+Test Result for 07-ternary-sideeffects.dcf
+Time: 98 ms
+Lines of Assembly: 121
+
+
+
+Test Result for 07-ternary-while.dcf
+Time: 92 ms
+Lines of Assembly: 171
+
+
+
+Test Result for 07-ternary.dcf
+Time: 99 ms
+Lines of Assembly: 130
+
+
+
+Test Result for 08-more-bools.dcf
+Time: 110 ms
+Lines of Assembly: 170
+
+
+
+Test Result for 08-more-math.dcf
+Time: 104 ms
+Lines of Assembly: 164
+
+
+
+Test Result for 09-unary.dcf
+Time: 104 ms
+Lines of Assembly: 108
+
+
+
+Test Result for 10-for-arr.dcf
+Time: 92 ms
+Lines of Assembly: 97
+
+
+
+Test Result for 10-for-basic-backwards.dcf
+Time: 92 ms
+Lines of Assembly: 73
+
+
+
+Test Result for 10-for-basic.dcf
+Time: 102 ms
+Lines of Assembly: 91
+
+
+
+Test Result for 10-for-nested-cf-break.dcf
+Time: 100 ms
+Lines of Assembly: 131
+
+
+
+Test Result for 10-for-nested-cf-continue.dcf
+Time: 97 ms
+Lines of Assembly: 133
+
+
+
+Test Result for 10-for-nested-cf-return.dcf
+Time: 98 ms
+Lines of Assembly: 133
+
+
+
+Test Result for 10-for-nested.dcf
+Time: 95 ms
+Lines of Assembly: 103
+
+
+
+Test Result for 10-for-while.dcf
+Time: 99 ms
+Lines of Assembly: 131
+
+
+
+Test Result for 11-while-nested.dcf
+Time: 96 ms
+Lines of Assembly: 99
+
+
+
+Test Result for 11-while.dcf
+Time: 94 ms
+Lines of Assembly: 109
+
+
+
+Test Result for fibonacci-hardcoded.dcf
+Time: 105 ms
+Lines of Assembly: 613
+
+
+
+Test Result for private-04-math2.dcf
+Time: 119 ms
+Lines of Assembly: 693
+
+
+
+Test Result for private-05-calls.dcf
+Time: 103 ms
+Lines of Assembly: 242
+
+
+
+Test Result for private-06-control-flow.dcf
+Time: 108 ms
+Lines of Assembly: 228
+
+
+
+Test Result for private-07-recursion.dcf
+Time: 95 ms
+Lines of Assembly: 104
+
+
+
+Test Result for private-08-array.dcf
+Time: 102 ms
+Lines of Assembly: 162
+
+
+
+Test Result for private-09-global.dcf
+Time: 94 ms
+Lines of Assembly: 67
+
+
+
+Test Result for private-11-big-array.dcf
+Time: 99 ms
+Lines of Assembly: 2278
+
+
+
+Test Result for private-12-huge.dcf
+Time: 125 ms
+Lines of Assembly: 1638
+
+
+
+Test Result for private-13-ifs.dcf
+Time: 119 ms
+Lines of Assembly: 552
+
+
+
+Test Result for private-14-shortcircuit.dcf
+Time: 116 ms
+Lines of Assembly: 515
+
+
+
+Test Result for private-15-not.dcf
+Time: 115 ms
+Lines of Assembly: 334
+
+
+
+Test Result for private-16-qsort.dcf
+Time: 106 ms
+Lines of Assembly: 676
+
+
+
+Test Result for private-17-insertionsort.dcf
+Time: 115 ms
+Lines of Assembly: 373
+
+
+
+Test Result for x-01-decrement-for.dcf
+Time: 109 ms
+Lines of Assembly: 364
+
+
+
+Test Result for x-02-for-condwithsideeffects.dcf
+Time: 102 ms
+Lines of Assembly: 243
+
+
+
+Test Result for x-03-for-unusualincrement.dcf
+Time: 97 ms
+Lines of Assembly: 135
+
+
+
+Test Result for x-04-for-continue.dcf
+Time: 93 ms
+Lines of Assembly: 100
+
+
+
+Test Result for x-07-main-recursion.dcf
+Time: 105 ms
+Lines of Assembly: 146
+
+
+
+Test Result for x-08-loop-break-continue.dcf
+Time: 93 ms
+Lines of Assembly: 179
+
+
+
+Test Result for x-09-loop-step.dcf
+Time: 99 ms
+Lines of Assembly: 104
+
+
+
+Test Result for x-10-many-args.dcf
+Time: 104 ms
+Lines of Assembly: 517
+
+
+
+Test Result for x-12-nested-array-access.dcf
+Time: 100 ms
+Lines of Assembly: 229
+
+
+
+Test Result for x-13-big-expr.dcf
+Time: 99 ms
+Lines of Assembly: 130
+
+
+
+Test Result for x-15-void-return.dcf
+Time: 96 ms
+Lines of Assembly: 146
+
+
+
+Test Result for x-16-return-zero.dcf
+Time: 90 ms
+Lines of Assembly: 77
+
+
+
+Test Result for x-17-divide.dcf
+Time: 94 ms
+Lines of Assembly: 109
+
+
+
+Test Result for x-18-initial-value.dcf
+Time: 103 ms
+Lines of Assembly: 168
+
+
+
+Test Result for x-19-break.dcf
+Time: 98 ms
+Lines of Assembly: 99
+
+
+
+Test Result for x-20-continue.dcf
+Time: 97 ms
+Lines of Assembly: 112
+
+
+
+Test Result for x-22-mixed-ints.dcf
+Time: 100 ms
+Lines of Assembly: 102
+
+
+
+Test Result for x-23-nested.dcf
+Time: 104 ms
+Lines of Assembly: 241
+
+
+
+Test Result for x-24-global2.dcf
+Time: 96 ms
+Lines of Assembly: 60
+
+
+
+Test Result for x-25-index.dcf
+Time: 93 ms
+Lines of Assembly: 147
+
+
+
+Test Result for x-26-math3.dcf
+Time: 96 ms
+Lines of Assembly: 172
+
+
+
+Test Result for x-28-sideeffectparams.dcf
+Time: 97 ms
+Lines of Assembly: 113
+
+
+
+Test Result for x-29-stack-arrays.dcf
+Time: 102 ms
+Lines of Assembly: 207
+
+
+
+Test Result for x-30-short-circ-methods.dcf
+Time: 107 ms
+Lines of Assembly: 193
+
+
+
+Test Result for x-31-scope-shadowing.dcf
+Time: 103 ms
+Lines of Assembly: 133
+
+
+
+Test Result for x-32-assign-order.dcf
+Time: 90 ms
+Lines of Assembly: 194
+
+
+
+Test Result for x-33-binop-order.dcf
+Time: 100 ms
+Lines of Assembly: 151
+
+
+
+Test Result for x-33-initializers.dcf
+Time: 114 ms
+Lines of Assembly: 854
+
+
+
+Test Result for x-34-ternary.dcf
+Time: 103 ms
+Lines of Assembly: 117
+
+
+
+Test Result for x-35-ternary.dcf
+Time: 118 ms
+Lines of Assembly: 478

@@ -1,0 +1,16 @@
+import printf;
+
+void main(){
+    int x;
+    int y;
+
+    for (x = 0; x < 3; x++){
+        for (y = 0; y < 3; y++){
+            if (y == 1){
+                break;
+            }
+            printf("(%d, %d)\n", x, y);
+        }
+        printf("row %d\n", x);
+    }
+}

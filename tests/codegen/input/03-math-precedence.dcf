@@ -1,0 +1,8 @@
+import printf;
+
+void main(){
+    bool b;
+    b = true || false && false;
+
+    printf("%d\n", b);
+}

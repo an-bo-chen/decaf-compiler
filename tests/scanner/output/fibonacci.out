@@ -1,0 +1,408 @@
+1 import
+1 IDENTIFIER atoi
+1 ;
+2 import
+2 IDENTIFIER exit
+2 ;
+3 import
+3 IDENTIFIER getenv
+3 ;
+4 import
+4 IDENTIFIER printf
+4 ;
+5 import
+5 IDENTIFIER strcmp
+5 ;
+7 int
+7 IDENTIFIER base_cases
+7 [
+7 ]
+7 =
+7 {
+7 INTLITERAL 0
+7 ,
+7 INTLITERAL 1
+7 }
+7 ;
+8 int
+8 IDENTIFIER memoization
+8 [
+8 INTLITERAL 100
+8 ]
+8 ;
+9 bool
+9 IDENTIFIER is_memoized
+9 [
+9 INTLITERAL 100
+9 ]
+9 ;
+11 int
+11 IDENTIFIER fib_recursive
+11 (
+11 int
+11 IDENTIFIER n
+11 )
+11 {
+12 if
+12 (
+12 IDENTIFIER n
+12 ==
+12 INTLITERAL 0
+12 ||
+12 IDENTIFIER n
+12 ==
+12 INTLITERAL 1
+12 )
+12 {
+13 return
+13 IDENTIFIER base_cases
+13 [
+13 IDENTIFIER n
+13 ]
+13 ;
+14 }
+14 else
+14 {
+15 int
+15 IDENTIFIER l
+15 ,
+15 IDENTIFIER r
+15 ;
+16 IDENTIFIER l
+16 =
+16 IDENTIFIER fib_recursive
+16 (
+16 IDENTIFIER n
+16 -
+16 INTLITERAL 1
+16 )
+16 ;
+17 IDENTIFIER r
+17 =
+17 IDENTIFIER fib_recursive
+17 (
+17 IDENTIFIER n
+17 -
+17 INTLITERAL 2
+17 )
+17 ;
+18 return
+18 IDENTIFIER l
+18 +
+18 IDENTIFIER r
+18 ;
+19 }
+20 }
+22 int
+22 IDENTIFIER fib_memoized
+22 (
+22 int
+22 IDENTIFIER n
+22 )
+22 {
+23 if
+23 (
+23 IDENTIFIER is_memoized
+23 [
+23 IDENTIFIER n
+23 ]
+23 )
+23 {
+24 return
+24 IDENTIFIER memoization
+24 [
+24 IDENTIFIER n
+24 ]
+24 ;
+25 }
+25 else
+25 {
+26 int
+26 IDENTIFIER res
+26 ;
+27 if
+27 (
+27 IDENTIFIER n
+27 ==
+27 INTLITERAL 0
+27 ||
+27 IDENTIFIER n
+27 ==
+27 INTLITERAL 1
+27 )
+27 {
+28 IDENTIFIER res
+28 =
+28 IDENTIFIER n
+28 ;
+29 }
+29 else
+29 {
+30 int
+30 IDENTIFIER l
+30 ,
+30 IDENTIFIER r
+30 ;
+31 IDENTIFIER l
+31 =
+31 IDENTIFIER fib_memoized
+31 (
+31 IDENTIFIER n
+31 -
+31 INTLITERAL 1
+31 )
+31 ;
+32 IDENTIFIER r
+32 =
+32 IDENTIFIER fib_memoized
+32 (
+32 IDENTIFIER n
+32 -
+32 INTLITERAL 2
+32 )
+32 ;
+33 IDENTIFIER res
+33 =
+33 IDENTIFIER l
+33 +
+33 IDENTIFIER r
+33 ;
+34 }
+35 IDENTIFIER memoization
+35 [
+35 IDENTIFIER n
+35 ]
+35 =
+35 IDENTIFIER res
+35 ;
+36 IDENTIFIER is_memoized
+36 [
+36 IDENTIFIER n
+36 ]
+36 =
+36 BOOLEANLITERAL true
+36 ;
+37 return
+37 IDENTIFIER res
+37 ;
+38 }
+39 }
+41 int
+41 IDENTIFIER fib_iterative
+41 (
+41 int
+41 IDENTIFIER n
+41 )
+41 {
+42 int
+42 IDENTIFIER a
+42 =
+42 INTLITERAL 0
+42 ,
+42 IDENTIFIER b
+42 =
+42 INTLITERAL 1
+42 ,
+42 IDENTIFIER i
+42 ;
+43 for
+43 (
+43 IDENTIFIER i
+43 =
+43 INTLITERAL 2
+43 ;
+43 IDENTIFIER i
+43 <=
+43 IDENTIFIER n
+43 ;
+43 IDENTIFIER i
+43 ++
+43 )
+43 {
+44 int
+44 IDENTIFIER c
+44 ;
+45 IDENTIFIER c
+45 =
+45 IDENTIFIER a
+45 +
+45 IDENTIFIER b
+45 ;
+46 IDENTIFIER a
+46 =
+46 IDENTIFIER b
+46 ;
+47 IDENTIFIER b
+47 =
+47 IDENTIFIER c
+47 ;
+48 }
+49 return
+49 IDENTIFIER b
+49 ;
+50 }
+52 void
+52 IDENTIFIER main
+52 (
+52 )
+52 {
+53 int
+53 IDENTIFIER n
+53 ,
+53 IDENTIFIER res
+53 =
+53 INTLITERAL 0
+53 ,
+53 IDENTIFIER tmp
+53 ;
+55 IDENTIFIER tmp
+55 =
+55 IDENTIFIER getenv
+55 (
+55 STRINGLITERAL "FIB_N"
+55 )
+55 ;
+56 if
+56 (
+56 IDENTIFIER tmp
+56 ==
+56 INTLITERAL 0
+56 )
+56 {
+57 IDENTIFIER printf
+57 (
+57 STRINGLITERAL "FIB_N not set! Must be an integer >= 0\n"
+57 )
+57 ;
+58 IDENTIFIER exit
+58 (
+58 INTLITERAL 1
+58 )
+58 ;
+59 }
+61 IDENTIFIER n
+61 =
+61 IDENTIFIER atoi
+61 (
+61 IDENTIFIER tmp
+61 )
+61 ;
+63 IDENTIFIER tmp
+63 =
+63 IDENTIFIER getenv
+63 (
+63 STRINGLITERAL "FIB_TYPE"
+63 )
+63 ;
+64 if
+64 (
+64 IDENTIFIER tmp
+64 ==
+64 INTLITERAL 0
+64 )
+64 {
+65 IDENTIFIER printf
+65 (
+65 STRINGLITERAL "FIB_TYPE not set! Must be one of {recursive, memoized, iterative}\n"
+65 )
+65 ;
+66 IDENTIFIER exit
+66 (
+66 INTLITERAL 1
+66 )
+66 ;
+67 }
+69 if
+69 (
+69 IDENTIFIER strcmp
+69 (
+69 IDENTIFIER tmp
+69 ,
+69 STRINGLITERAL "recursive"
+69 )
+69 ==
+69 INTLITERAL 0
+69 )
+69 {
+70 IDENTIFIER res
+70 =
+70 IDENTIFIER fib_recursive
+70 (
+70 IDENTIFIER n
+70 )
+70 ;
+71 }
+71 else
+71 {
+72 if
+72 (
+72 IDENTIFIER strcmp
+72 (
+72 IDENTIFIER tmp
+72 ,
+72 STRINGLITERAL "memoized"
+72 )
+72 ==
+72 INTLITERAL 0
+72 )
+72 {
+73 IDENTIFIER res
+73 =
+73 IDENTIFIER fib_memoized
+73 (
+73 IDENTIFIER n
+73 )
+73 ;
+74 }
+74 else
+74 {
+75 if
+75 (
+75 IDENTIFIER strcmp
+75 (
+75 IDENTIFIER tmp
+75 ,
+75 STRINGLITERAL "iterative"
+75 )
+75 ==
+75 INTLITERAL 0
+75 )
+75 {
+76 IDENTIFIER res
+76 =
+76 IDENTIFIER fib_iterative
+76 (
+76 IDENTIFIER n
+76 )
+76 ;
+77 }
+78 }
+79 }
+81 if
+81 (
+81 IDENTIFIER res
+81 ==
+81 INTLITERAL 0
+81 )
+81 {
+82 IDENTIFIER printf
+82 (
+82 STRINGLITERAL "Error! No method specified\n"
+82 )
+82 ;
+83 IDENTIFIER exit
+83 (
+83 INTLITERAL 1
+83 )
+83 ;
+84 }
+86 IDENTIFIER printf
+86 (
+86 STRINGLITERAL "fib(%d): %d\n"
+86 ,
+86 IDENTIFIER n
+86 ,
+86 IDENTIFIER res
+86 )
+86 ;
+87 }

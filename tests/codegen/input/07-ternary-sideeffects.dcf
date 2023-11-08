@@ -1,0 +1,15 @@
+import printf;
+
+int c = 0;
+
+bool sideEffect(){
+    c = 1;
+    return true;
+}
+
+void main(){
+    int a;
+
+    a = sideEffect() ? (c == 1 ? 1 : 2) : 3;
+    printf("%d\n", a);
+}

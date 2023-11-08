@@ -1,0 +1,14 @@
+import printf;
+
+int a[10];
+void main() {
+    int i, j;
+    for (i = 0; i < len(a); i++) {
+        a[i] = i * i;
+    }
+    for (i = 0; i < len(a); i++) {
+        for(j = 0; j < i; j++) {
+            printf("i: %d, j: %d, a[j]: %d", i, j, a[j]);
+        }
+    }
+}

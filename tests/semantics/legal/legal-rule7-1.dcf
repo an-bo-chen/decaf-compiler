@@ -1,0 +1,7 @@
+import printf;
+
+void main() {
+    printf("hello");
+    printf(1, 2, 3, 4);
+    printf('c');
+}

@@ -1,0 +1,22 @@
+import printf;
+
+void main(){
+    int a = 10;
+    int b = 10;
+
+    if (b >= a){
+        printf("Hello A\n");
+    }
+
+    if (b > a) {
+        printf("Should not run\n");
+    }
+
+    if (b >= a || b > a){
+        printf("Hello B\n");
+    }
+
+    if (b >= a && b > a){
+        printf("Should not run\n");
+    }
+}

@@ -1,0 +1,5 @@
+void main(){
+    bool a;
+    a = -true;
+    a = !true;
+}

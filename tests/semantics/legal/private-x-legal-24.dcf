@@ -1,0 +1,5 @@
+void main() {
+  int x;
+
+  x = true ? 1 : false ? 2 : 3;
+}

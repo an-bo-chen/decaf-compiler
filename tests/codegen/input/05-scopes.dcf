@@ -1,0 +1,22 @@
+import printf;
+
+int a = 15;
+
+void global(){
+    printf("%d\n", a);
+}
+
+void main(){
+    int a = 30;
+    printf("%d\n", a);
+    a = 500;
+
+    while(true){
+        int a = 40;
+
+        printf("%d\n", a);
+        break;
+    }
+    printf("%d\n", a);
+    global();
+}

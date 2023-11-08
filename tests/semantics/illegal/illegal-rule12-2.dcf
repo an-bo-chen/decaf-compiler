@@ -1,0 +1,7 @@
+int a;
+
+void main(){
+    while(true){
+        a = b;
+    }
+}

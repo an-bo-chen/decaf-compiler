@@ -1,0 +1,27 @@
+import printf;
+void main(){
+    int test1 = 1;
+    int test2 = 2;
+    int test3 = 3;
+    int test4 = 4;
+    int a[10];
+    int test5 = 5;
+    int test6 = 6;
+    int test7 = 7;
+    int test8 = 8;
+    int i;
+
+
+    printf("%d\n", test1);
+    printf("%d\n", test2);
+    printf("%d\n", test3);
+    printf("%d\n", test4);
+    printf("%d\n", len(a));
+    for (i = 0; i < 10; i++){
+        printf("%d\n", a[i]);
+    }
+    printf("%d\n", test5);
+    printf("%d\n", test6);
+    printf("%d\n", test7);
+    printf("%d\n", test8);
+}

@@ -1,0 +1,4 @@
+bool a[5] = {true, false, true, false, true};
+// Cannot have both
+
+void main(){}

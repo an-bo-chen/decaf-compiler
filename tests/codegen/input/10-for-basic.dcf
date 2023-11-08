@@ -1,0 +1,11 @@
+import printf;
+
+void main(){
+    int i;
+
+    printf("Hello A\n");
+    for (i = 0; i < 5; i++){
+        printf("%d\n", i);
+    }
+    printf("Hello B\n");
+}

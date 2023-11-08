@@ -1,0 +1,9 @@
+int a;
+
+void main(){
+    int a;
+
+    while(true){
+        bool a;
+    }
+}

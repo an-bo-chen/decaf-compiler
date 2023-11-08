@@ -1,0 +1,7 @@
+bool a = false;
+
+void main(){
+    int b;
+
+    b = len(a);
+}

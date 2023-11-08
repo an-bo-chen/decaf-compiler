@@ -1,0 +1,4 @@
+bool a[];
+// Must have one
+
+void main(){}

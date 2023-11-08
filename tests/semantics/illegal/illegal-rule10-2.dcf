@@ -1,0 +1,7 @@
+void main(){
+}
+
+int a(){
+    // Return type is int, but returning nothing
+    return;
+}

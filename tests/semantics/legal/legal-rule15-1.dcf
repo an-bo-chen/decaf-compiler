@@ -1,0 +1,7 @@
+int a[] = {1, 2, 3};
+
+void main(){
+    int b;
+
+    b = len(a);
+}

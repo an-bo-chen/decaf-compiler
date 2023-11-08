@@ -1,0 +1,11 @@
+import printf;
+
+void main(){
+    int i;
+
+    while (i < 10){
+        printf("%d\n", i);
+
+        i += (i % 2 == 0 ? 1 : 2);
+    }
+}

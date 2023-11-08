@@ -1,0 +1,7 @@
+asm/
+bin/
+output/
+*.s
+noise_median*
+saman_*
+segovia_*

@@ -1,0 +1,10 @@
+import printf;
+
+int hello(){
+    return 9999;
+}
+
+void main(){
+    printf("%d\n", hello());
+}
+

@@ -1,0 +1,7 @@
+bool test() {
+    return false;
+}
+void main(){
+    bool b;
+    b = (75 == 2) != (test());
+}

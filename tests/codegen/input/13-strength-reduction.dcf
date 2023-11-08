@@ -1,0 +1,19 @@
+import printf;
+
+int return1(){
+    return 400;
+}
+
+void main(){
+    int a;
+    int b;
+    int c;
+
+    a = return1();
+    c = a / 4;
+    printf("%d\n", c);
+
+    a = return1();
+    c = a * 4;
+    printf("%d\n", c);
+}

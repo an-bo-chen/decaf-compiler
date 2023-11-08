@@ -1,0 +1,11 @@
+import printf;
+
+void main(){
+    int a = 10;
+    bool b = true;
+
+    printf("%d\n", -a);
+    printf("%d\n", !b);
+    printf("%d\n", -(((a))));
+    printf("%d\n", !(b));
+}

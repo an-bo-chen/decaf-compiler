@@ -1,0 +1,7 @@
+void main(){
+}
+
+bool a(){
+    // Return type is bool
+    return 1;
+}

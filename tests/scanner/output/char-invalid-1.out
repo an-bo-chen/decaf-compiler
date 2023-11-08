@@ -1,0 +1,12 @@
+char-invalid-1 line 1:3: expecting ''', found 'o'
+1 IDENTIFIER u
+1 IDENTIFIER cannot
+1 IDENTIFIER have
+1 IDENTIFIER multiple
+1 IDENTIFIER ASCII
+1 IDENTIFIER characters
+1 IDENTIFIER in
+1 IDENTIFIER a
+1 IDENTIFIER character
+1 IDENTIFIER literal
+char-invalid-1 line 1:66: unexpected char: 0xA

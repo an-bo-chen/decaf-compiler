@@ -1,0 +1,17 @@
+import printf;
+
+int c = 0;
+
+bool sideEffect(){
+    c = 1;
+    return true;
+}
+
+void main(){
+    if(sideEffect() ? (c == 1 ? true: false): false){
+        printf("if branch\n");
+    }else{
+        printf("else branch\n");
+    }
+    printf("outside\n");
+}

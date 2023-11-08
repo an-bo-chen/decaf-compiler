@@ -1,0 +1,4 @@
+void main(){
+    int a, b;
+    for (a = 2 + 1; a == 3 ? 4 < 3 : false && true; b -= a) {}
+}

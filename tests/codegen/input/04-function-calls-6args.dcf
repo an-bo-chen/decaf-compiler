@@ -1,0 +1,11 @@
+import printf;
+
+void call6args(int p1, bool p2, int p3, bool p4, int p5, bool p6) {
+    printf("%d\n", p6);
+}
+
+void main(){
+    call6args(1, true, 3, true, 5, true);
+    call6args(1, true, 3, true, 5, false);
+}
+

@@ -1,0 +1,10 @@
+import printf;
+
+bool hello(){
+    return true;
+}
+
+void main(){
+    printf("%d\n", hello());
+}
+

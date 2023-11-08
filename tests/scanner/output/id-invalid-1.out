@@ -1,0 +1,13 @@
+1 IDENTIFIER This
+1 IDENTIFIER is
+1 IDENTIFIER a
+1 IDENTIFIER valid
+1 IDENTIFIER series
+1 IDENTIFIER of
+1 IDENTIFIER identifiers
+1 IDENTIFIER followed
+1 IDENTIFIER by
+1 IDENTIFIER an
+1 IDENTIFIER illegal
+1 IDENTIFIER character
+id-invalid-1 line 1:71: unexpected char '.'

@@ -1,0 +1,12 @@
+import printf;
+
+void _main_1(){
+    printf("hello\n");
+}
+
+void main(){
+    _main_1();
+    _main_1();
+    _main_1();
+}
+

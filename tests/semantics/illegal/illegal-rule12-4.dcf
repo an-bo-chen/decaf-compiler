@@ -1,0 +1,7 @@
+int b;
+
+void main(){
+    for(b = 0; b < 5; b++){
+        a = b;
+    }
+}

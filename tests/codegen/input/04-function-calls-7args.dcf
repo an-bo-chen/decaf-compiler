@@ -1,0 +1,11 @@
+import printf;
+
+void call7args(int p1, bool p2, int p3, bool p4, int p5, bool p6, int p7) {
+    printf("%d\n", p7);
+}
+
+void main(){
+    call7args(1, true, 3, true, 5, true, 10);
+    call7args(1, true, 3, true, 5, false, -10);
+}
+

@@ -1,0 +1,13 @@
+import printf;
+
+void main(){
+    bool a = true;
+    bool b = false;
+
+    if(b != true){
+        printf("if branch\n");
+    }else{
+        printf("else branch\n");
+    }
+    printf("outside\n");
+}

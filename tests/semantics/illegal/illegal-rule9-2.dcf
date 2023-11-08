@@ -1,0 +1,9 @@
+void main() {
+    int c[] = {1, 2, 3};
+    b = a(c);
+    // Method call uses array
+}
+
+bool a(int a){
+    return true;
+}

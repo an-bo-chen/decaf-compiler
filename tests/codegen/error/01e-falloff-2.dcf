@@ -1,0 +1,12 @@
+import printf;
+
+int a(int input){
+    if (input < 5){
+        return 1;
+    }
+}
+
+void main(){
+    printf("%d\n", a(3));
+    printf("%d\n", a(15));
+}

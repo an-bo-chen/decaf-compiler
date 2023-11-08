@@ -1,0 +1,10 @@
+bool blab[3];
+
+bool bar(bool foo) {
+    return !foo;
+}
+
+void main(){
+    bool b;
+    b = bar(blab[2] || false);
+}

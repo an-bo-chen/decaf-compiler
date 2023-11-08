@@ -1,0 +1,10 @@
+import printf;
+
+void call8args(int p1, bool p2, int p3, bool p4, int p5, bool p6, int p7, int p8) {
+    printf("%d\n", p7+p8);
+}
+
+void main(){
+    call8args(1, true, 3, true, 5, true, 10, 15);
+    call8args(1, true, 3, true, 5, false, -10, 20);
+}

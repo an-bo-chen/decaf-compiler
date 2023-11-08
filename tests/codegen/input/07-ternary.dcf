@@ -1,0 +1,11 @@
+import printf;
+
+void main(){
+    int a;
+
+    a = true ? 1 : 0;
+    printf("%d\n", a);
+
+    a = true ? true ? 1 : 2 : 3;
+    printf("%d\n", a);
+}

@@ -1,0 +1,16 @@
+import printf;
+
+void main(){
+    if(true){
+        printf("if branch\n");
+
+        if (true) {
+            printf("if branch 2\n");
+        } else {
+            printf("else branch 2\n");
+        }
+    }else{
+        printf("else branch\n");
+    }
+    printf("outside\n");
+}
